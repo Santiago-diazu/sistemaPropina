@@ -1,5 +1,5 @@
 
-let totalCuenta = prompt("Ingrese el monto total de la cuenta:");
+let totalCuenta = prompt("Ingrese el valor total de la cuenta:");
 let nivelServicio = prompt("Ingrese el nivel de servicio: \n 1. Excelente. \n 2. Bueno. \n 3. Regular.");
 
 let cuenta = parseFloat(totalCuenta);
@@ -34,7 +34,7 @@ if (isNaN(cuenta) || cuenta <= 0) {
   let cuentaConDescuento = cuenta - descuento;
   let totalFinal = cuentaConDescuento + propina;
 
-  console.log("=== Resumen de pago ===");
+  console.log("Resumen de pago");
   console.log("Monto original: $" + cuenta.toFixed(2));
   console.log("Nivel de servicio: " + nivelServicio);
   console.log("Propina: $" + propina.toFixed(2));
